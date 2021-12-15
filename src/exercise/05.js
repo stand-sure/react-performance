@@ -38,7 +38,7 @@ function AppProvider({ children }) {
   const [state, dispatch] = React.useReducer(appReducer, {
     dogName: '',
     grid: initialGrid,
-  });
+  }); 
   // 🐨 memoize this value with React.useMemo
   // const value = React.useMemo(() => [state, dispatch], [state]);
   return (
